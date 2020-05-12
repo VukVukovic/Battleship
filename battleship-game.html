@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="battleship-style.css">
+</head>
+<body class="bg-blue">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="w-100 p-4">
+                <div class="row h2 font-oswald text-darkblue">
+                    <div class="col-6 col-lg-4 text-left order-2 order-lg-1">
+                        <i class="fas fa-user"></i> <span id="player0"></span>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center order-1 order-lg-2">
+                        <div id="info"></div>
+                    </div> 
+                    <div class="col-6 col-lg-4 text-right order-3 order-lg-3">
+                        <span id="player1"></span> <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="card p-4 bg-lightgrey w-100">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                            <div class="square">
+                                <div id="my-table" class="square-content">
+                                    <!-- Grid generated dinamically -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                            <div class="square">
+                                <div id="opponent-table" class="square-content">
+                                    <!-- Grid generated dinamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="win-modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <a href="battleship-welcome.html">
+                <button type="button" class="btn btn-primary">New game</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js" integrity="sha256-zxevz2MOFpqKf3D9eeNd/gE0X679Aeg6WRhubeSA9Vc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="battleship-game.js"></script>
+</body>
+</html>

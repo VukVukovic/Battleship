@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="battleship-style.css">
+</head>
+<body class="bg-blue">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="w-100 p-4">
+                <div class="row h2 font-oswald text-darkblue">
+                    <div class="col-5 text-left">
+                        <i class="fas fa-user"></i> <span id="player0"></span>
+                    </div>
+                    <div class="col-2 text-center">
+                        <i class="fas fa-cog"></i>
+                    </div> 
+                    <div class="col-5 text-right">
+                        <span id="player1"></span> <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="card p-4 bg-lightgrey w-100 mt-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="square">
+                                <div id="setup-table" class="square-content">
+                                    <!-- Grid generated dinamically -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 p-4">
+                            <div id="info" class="text-center font-oswald h3 h-25"></div>
+                            <div class="my-auto h-75 pb-4">
+                                <div class="row">
+                                    <div class="col-4 text-right">
+                                        <span id="left-1" class="h1 font-oswald col-3"></span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-1"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 text-right">
+                                        <span id="left-2" class="h1 font-oswald col-3"></span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-2"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-2"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 text-right">
+                                        <span id="left-3" class="h1 font-oswald col-3"></span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-3"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-3"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-3"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 text-right">
+                                        <span id="left-4" class="h1 font-oswald col-3"></span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-4"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-4"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-4"></div>
+                                        <div class="ml-1 square ship-legend card d-inline-block ship-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js" integrity="sha256-zxevz2MOFpqKf3D9eeNd/gE0X679Aeg6WRhubeSA9Vc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="battleship-setup.js"></script>
+</body>
+</html>

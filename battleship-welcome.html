@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="battleship-style.css">
+</head>
+<body class="bg-blue">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="w-100 p-4">
+                <div class="text-center">
+                    <span class="h1 font-oswald text-uppercase text-darkblue"><i class="fas fa-ship"></i> BattleShip</span>
+                </div>
+                <div class="card p-4 bg-lightgrey w-100 mt-2">
+                    <form id="formPlayers" action="battleship-setup.html" method="POST">
+                        <div class="form-group">
+                            <label for="player0">First player</label>
+                            <input type="text" class="form-control" id="player0" required pattern="[A-Za-z0-9_]{3,15}">
+                        </div>
+                        <div class="form-group">
+                            <label for="player1">Second player</label>
+                            <input type="text" class="form-control" id="player1" required pattern="[A-Za-z0-9_]{3,15}">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Start game</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js" integrity="sha256-zxevz2MOFpqKf3D9eeNd/gE0X679Aeg6WRhubeSA9Vc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="battleship-welcome.js"></script>
+</body>
+</html>
